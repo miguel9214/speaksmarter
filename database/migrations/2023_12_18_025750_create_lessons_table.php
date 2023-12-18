@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('pdf_uri',255);
             $table->unsignedBigInteger('level_id');
             $table->timestamps();
-
             $table->foreign('level_id')->references('id')->on('levels')->onUpdate('cascade')->onDelete('cascade');
         });
     }

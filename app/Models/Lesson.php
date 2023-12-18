@@ -20,8 +20,9 @@ class Lesson extends Model
         return $this->belongsToMany(Category::class);
     }
 
+    //  relacion de 1 a muchos de lecciones con
     public function level()
     {
-        return $this->belongsTo(level::class);
+        return $this->belongsTo(Level::class);
     }
 }
